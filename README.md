@@ -58,5 +58,5 @@ Interested in being a part of this project? Check out the [Contribution Guidelin
 
 ## 📄 License
 
-This project operates under the [MIT License](LICENSE.md).  
-© 2024 [SufiyanAK](https://github.com/SufiyanAK)
+This project operates under the [MIT License](License.md).  
+© 2024 [SufiyanAK](https://github.com/SufiyanAK).
