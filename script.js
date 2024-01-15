@@ -1,29 +1,37 @@
 const resultBox = document.querySelector('.result-box');
 const display = document.querySelector('#input-box');
 // Function to calculate the result
+function customEval(expression) {
+    try {
+        // Use the Function constructor to create a function from the expression
+        const func = new Function('return ' + expression);
+        const result = func();
+
+        return result;
+    } catch (error) {
+        throw new Error('Invalid expression');
+    }
+}
+
 function calculateResult() {
 
-    // Check if the input is not empty before evaluating
     if (display.value.trim() !== '') {
         try {
-            // Evaluate the expression
-            const result = eval(display.value);
+            const result = customEval(display.value);
 
-            // Check if the result is an integer or a float
             resultBox.textContent = Number.isInteger(result) ? result : result.toFixed(2);
 
             display.value = '';
         } catch (error) {
-            // Handle errors, for example, if the expression is not valid
             display.value = 'Error';
 
-            // Set a timeout to clear the display after 1 second
             setTimeout(() => {
                 display.value = '';
             }, 1000);
         }
     }
 }
+
 
 // Event listener for button clicks
 document.querySelectorAll('.button').forEach(btn => {
@@ -57,17 +65,18 @@ document.querySelectorAll('.button').forEach(btn => {
 
 function handleOperator(operator) {
 
-    // Handle operator logic
     if (display.value.trim() !== '') {
-        if (isOperator(display.value.slice(-1))) {
-            // Replace the last operator if it exists
+        const lastChar = display.value.slice(-1);
+        if (isOperator(lastChar) && operator !== '.') {
+            // Replace the last operator if it exists (except for decimal point)
             display.value = display.value.slice(0, -1) + operator;
-        } else {
-            // Add the operator
+        } else if (lastChar !== '.' || (lastChar === '.' && operator !== '.')) {
+            // Add the operator if the last character is not a decimal point or replace if the operator is not a decimal point
             display.value += operator;
         }
     }
 }
+
 
 function handleNumber(number) {
     // Check if the display contains the calculated value

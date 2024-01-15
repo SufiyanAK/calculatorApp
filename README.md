@@ -26,19 +26,29 @@ Here's what our calculator brings to the table:
 While our calculator does its job well, there's always room for improvement. Here are a few ideas:
 
 1. **Expression Parsing:**
-   - Think about creating a custom expression parser rather than using `eval()` for better security.
+   - Utilize a custom `customEval` function for improved security instead of using `eval()`.
 
-2. **Code Optimization:**
-   - To keep things snappy, consider storing the reference to the input box in a variable to avoid redundant DOM queries.
+2. **Operator Logic Enhancement:**
+   - Improve operator handling logic for better consistency.
 
-3. **Enhance Operator Logic:**
-   - Fine-tune how operators are handled to cover additional scenarios for consistent behavior.
+3. **Reset Button Logic:**
+   - Adjust the logic for handling the "Reset" button to improve clarity.
 
-4. **Visual Feedback:**
-   - Spice things up by providing visual feedback for button clicks, like highlighting the pressed button for a better user experience.
+4. **Unit Testing:**
+   - Implement unit tests to ensure the functionality of individual functions and catch potential bugs early.
 
-5. **Unit Testing:**
-   - Add some unit tests to make sure each function is doing its job and catch potential bugs early.
+## 🔄 Code Updates
+
+### **`script.js`:**
+
+1. **Expression Parsing:**
+   - **Update:** Introduced a custom `customEval` function for better security in evaluating expressions. Replaced the use of `eval()`.
+
+2. **Code Organization:**
+   - **Update:** Created a separate `calculateResult` function for improved code organization.
+
+3. **Operator Logic Enhancement:**
+   - **Update:** Improved operator handling logic for better consistency.
 
 Feel free to jump in with your ideas and contributions! We're all ears and value the input of our fellow developers.
 
