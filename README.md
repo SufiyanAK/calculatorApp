@@ -6,24 +6,24 @@ Greetings to the Calculator Web App! This project aims to provide a simple yet e
 
 ## 🛠️ Project Structure
 
-Let's talk about how we've set things up:
+Here's a quick rundown of how things are organized:
 
-- **index.html:** This is where we define the structure of our calculator interface.
-- **style.css:** Here lies the magic of styling – making our calculator look good, with options for both light and dark modes.
-- **script.js:** Our JavaScript file is where we've poured in the logic for our calculator to function smoothly.
+- **index.html:** Defines the structure of our calculator interface.
+- **style.css:** Handles the styling, offering both light and dark mode options.
+- **script.js:** Houses the logic for a smoothly functioning calculator.
 
 ## 🌟 Features
 
-Here's what our calculator brings to the table:
+What sets our calculator apart:
 
-- **Basic Arithmetic Operations:** From addition and subtraction to multiplication and division, it's got you covered.
-- **Error Handling:** We keep things clear with a display that shows "Error" for invalid expressions, ensuring a smooth user experience.
+- **Basic Arithmetic Operations:** Addition, subtraction, multiplication, and division – it's got you covered.
+- **Error Handling:** A clear display shows "Error" for invalid expressions, ensuring a smooth user experience.
 - **Light/Dark Mode Toggle:** Switch between light and dark modes based on your preference.
-- **Responsive Design:** No matter the device – desktop or mobile – our calculator adapts for a seamless user experience.
+- **Responsive Design:** Adapts seamlessly to various devices for a consistent user experience.
 
 ## 🔧 Suggestions and Improvements
 
-While our calculator does its job well, there's always room for improvement. Here are a few ideas:
+While our calculator is doing well, there's room for improvement. Here are a few ideas:
 
 1. **Expression Parsing:**
    - Utilize a custom `customEval` function for improved security instead of using `eval()`.
@@ -59,8 +59,4 @@ Interested in being a part of this project? Check out the [Contribution Guidelin
 ## 📄 License
 
 This project operates under the [MIT License](License.md).  
-<<<<<<< HEAD
-© 2024 [SufiyanAK](https://github.com/SufiyanAK).
-=======
 © 2024 [SufiyanAK](https://github.com/SufiyanAK)
->>>>>>> 3e3db097b4c098ee264195f0d332c2e94ac00d8b
