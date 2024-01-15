@@ -59,4 +59,8 @@ Interested in being a part of this project? Check out the [Contribution Guidelin
 ## 📄 License
 
 This project operates under the [MIT License](License.md).  
+<<<<<<< HEAD
 © 2024 [SufiyanAK](https://github.com/SufiyanAK).
+=======
+© 2024 [SufiyanAK](https://github.com/SufiyanAK)
+>>>>>>> 3e3db097b4c098ee264195f0d332c2e94ac00d8b
