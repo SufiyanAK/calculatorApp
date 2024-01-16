@@ -154,6 +154,28 @@ body {
     color: var(--display-txt)
 }
 
+.footer {
+    width: 100%;
+    height: 2.5rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer svg {
+    height: 2rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.footer a {
+    text-decoration: none;
+    /* font-size: 1.2rem; */
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+}
 /* 2xl = 1536px = 96rem huge desktop screen */
 /* @media (max-width: 96em) {} */
 
