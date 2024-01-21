@@ -1,5 +1,6 @@
 const resultBox = document.querySelector('.result-box');
 const display = document.querySelector('#input-box');
+
 // Function to calculate the result
 function customEval(expression) {
     try {
@@ -112,3 +113,42 @@ function toggleMode() {
         isActive = true;
     }
 }
+
+
+document.body.addEventListener('keydown', (event) => {
+    const value = event.key;
+
+    // Check button value and perform corresponding action
+    switch (value) {
+        case '=':
+        case 'Enter':
+            calculateResult();
+            break;
+        case 'd':
+            display.value = display.value.toString().slice(0, -1);
+            break;
+        case 'r':
+            resultBox.textContent = '';
+            display.value = '';
+            break;
+        case '+':
+        case '-':
+        case '/':
+        case '*':
+        case '.':
+            handleOperator(value);
+            break;
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+        case '0':
+            handleNumber(value);
+            break;
+    }
+});

@@ -52,6 +52,10 @@ While our calculator is doing well, there's room for improvement. Here are a few
 
 Feel free to jump in with your ideas and contributions! We're all ears and value the input of our fellow developers.
 
+## 🌐 Project Link
+
+Check out the live calculator: [Calculator Web App](https://calculator-wb-app.netlify.app/)
+
 ## 🤝 Contributing
 
 Interested in being a part of this project? Check out the [Contribution Guidelines](CONTRIBUTING.md) for the nitty-gritty details.
