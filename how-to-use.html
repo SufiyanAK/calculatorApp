@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Instructions</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            width: 70%;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 1.4rem;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ol, ul {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+
+        .back {
+            background-color: #333;
+            color: #f4f4f4;
+            font-size: 1.6rem;
+            padding: 1rem 1.4rem;
+            border-radius: .5rem;
+            cursor: pointer;
+            box-shadow: 0 3px #a8a0a0;
+            transition: all .5s;
+        }
+
+        .back:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator Instructions</h1>
+    <p>This calculator allows you to perform basic arithmetic calculations.</p>
+    <p>To use the calculator:</p>
+    <ol>
+        <li>Type numbers and operators directly into the input box or click on the buttons below.</li>
+        <li>Press '=' or 'Enter' to calculate the result.</li>
+        <li>Press 'DEL' or 'Backspace' to delete the last character.</li>
+        <li>Press 'Reset' or 'r' to clear the input and result.</li>
+    </ol>
+    <h2>Keyboard Shortcuts:</h2>
+    <ul>
+        <li>Numbers <Strong>(0-9)</Strong>: Type the corresponding number key.</li>
+        <li>Operators <Strong>(+, -, *, /, .)</Strong>: Type the corresponding operator key.</li>
+        <li>Calculate Result: Press '=' or 'Enter'.</li>
+        <li>Delete: Press 'DEL' or 'Backspace'.</li>
+        <li>Reset: Press 'r'.</li>
+    </ul>
+    <div class="back" onclick="window.location.href = 'index.html'">Back</div>
+
+    <script>
+        /* Paste your JavaScript code here */
+    </script>
+</body>
+</html>

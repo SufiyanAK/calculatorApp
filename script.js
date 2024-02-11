@@ -1,5 +1,6 @@
 const resultBox = document.querySelector('.result-box');
 const display = document.querySelector('#input-box');
+const instructions = document.querySelector('.ins');
 
 // Function to calculate the result
 function customEval(expression) {
@@ -57,6 +58,9 @@ document.querySelectorAll('.button').forEach(btn => {
             case '*':
             case '.':
                 handleOperator(value);
+                break;
+            case 'How to use':
+                window.location.href = 'how-to-use.html';
                 break;
             default:
                 handleNumber(value);
@@ -125,9 +129,11 @@ document.body.addEventListener('keydown', (event) => {
             calculateResult();
             break;
         case 'd':
+        case 'Backspace':
             display.value = display.value.toString().slice(0, -1);
             break;
         case 'r':
+        case 'Escape':
             resultBox.textContent = '';
             display.value = '';
             break;
